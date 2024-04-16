@@ -2,10 +2,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 data = pd.read_csv("cbb.csv")
-
 #Calculate average offensive efficiency for every team for each year
 averageOffensive = data.groupby(['YEAR', 'TEAM'])['ADJOE'].mean().unstack()
-# Get the top 5 teams with the highest average
+# Get the top 5 teams with the highest Average Offensive Efficiency (ADJOE)
 top_5 = averageOffensive.mean().nlargest(5).index
 #Filter the data to include only the top 5 teams
 averageOffensiveTop_5 = averageOffensive[top_5]
