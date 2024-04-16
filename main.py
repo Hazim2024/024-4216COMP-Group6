@@ -81,19 +81,19 @@ def main():
         print("Press 5 for Wissem's Visualisation")
         print("Press 6 for Abdullah's Visualisation")
         print("Press 7 for Raghad's Visualisation")
-        print("8. Exit")
+        print("Press 8 for Exit")
         choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
-            aymane_visiualisation()
+            aymane_visualisation()
         elif choice == '2':
-            hazim_visiualisation()
+            hazim_visualisation()
         elif choice == '3':
-            mavia_visiualisation()
+            mavia_visualisation()
         elif choice == '4':
-            jordy_visiualisation()
+            jordy_visualisation()
         elif choice == '5':
-            wissem_visiualisation()
+            wissem_visualisation()
         elif choice == '8':
             print("Thank you")
             break
