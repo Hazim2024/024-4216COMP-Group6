@@ -79,7 +79,9 @@ def main():
         print("Press 3 for Mavia's Visiualisation")
         print("Press 4 for Jordy's Visiualisation")
         print("Press 5 for Wissem's Visiualisation")
-        print("6. Exit")
+        print("Press 6 for Abdullah's Visiualisation")
+        print("Press 7 for Raghad's Visiualisation")
+        print("8. Exit")
         choice = input("Enter your choice (1-6): ")
 
         if choice == '1':
@@ -92,11 +94,11 @@ def main():
             jordy_visiualisation()
         elif choice == '5':
             wissem_visiualisation()
-        elif choice == '6':
-            print("Exiting the program...")
+        elif choice == '8':
+            print("Thank you")
             break
         else:
-            print("Invalid choice. Please enter a valid option.")
+            print("Please enter number from [1-8]")
 
-if __name__ == "__main__":
-    main()
+
+main()
