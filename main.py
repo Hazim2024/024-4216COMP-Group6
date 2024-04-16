@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def hazim_visiualisation():
+def hazim_visualisation():
     data = pd.read_csv("cbb.csv")
     averageOffensive = data.groupby(['YEAR', 'TEAM'])['ADJOE'].mean().unstack()
     top_5 = averageOffensive.mean().nlargest(5).index
@@ -15,7 +15,7 @@ def hazim_visiualisation():
     plt.tight_layout()
     plt.show()
 
-def wissem_visiualisation():
+def wissem_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_teams = data[data['POSTSEASON'] == 'Champions']
     second_place_teams = data[data['POSTSEASON'] == '2ND']
@@ -30,7 +30,7 @@ def wissem_visiualisation():
     ax.legend()
     plt.show()
 
-def mavia_visiualisation():
+def mavia_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_teams = data[data['POSTSEASON'] == 'Champions']
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
@@ -45,7 +45,7 @@ def mavia_visiualisation():
     plt.tight_layout()
     plt.show()
 
-def jordy_visiualisation():
+def jordy_visualisation():
     data = pd.read_csv("cbb.csv")
     average_winning_ratio = data.groupby('TEAM')['W'].mean()
     top_5_teams = average_winning_ratio.nlargest(5)
@@ -55,7 +55,7 @@ def jordy_visiualisation():
     plt.axis('equal')
     plt.show()
 
-def aymane_visiualisation():
+def aymane_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_team_data = data[data['TEAM'] == "North Carolina"]
     performance_metrics = ['2P_D', '3P_D', 'ADJ_T', 'FTRD']
@@ -74,13 +74,13 @@ def aymane_visiualisation():
 def main():
     while True:
         print("Menu:")
-        print("Press 1 for Aymane's Visiualisation")
-        print("Press 2 for Hazim's Visiualisation")
-        print("Press 3 for Mavia's Visiualisation")
-        print("Press 4 for Jordy's Visiualisation")
-        print("Press 5 for Wissem's Visiualisation")
-        print("Press 6 for Abdullah's Visiualisation")
-        print("Press 7 for Raghad's Visiualisation")
+        print("Press 1 for Aymane's Visualisation")
+        print("Press 2 for Hazim's Visualisation")
+        print("Press 3 for Mavia's Visualisation")
+        print("Press 4 for Jordy's Visualisation")
+        print("Press 5 for Wissem's Visualisation")
+        print("Press 6 for Abdullah's Visualisation")
+        print("Press 7 for Raghad's Visualisation")
         print("8. Exit")
         choice = input("Enter your choice (1-6): ")
 
@@ -99,6 +99,4 @@ def main():
             break
         else:
             print("Please enter number from [1-8]")
-
-
 main()
