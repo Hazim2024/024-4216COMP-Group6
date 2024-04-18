@@ -14,7 +14,7 @@ def hazim_visualisation():
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.show()
-
+#author wissem
 def wissem_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_teams = data[data['POSTSEASON'] == 'Champions']
