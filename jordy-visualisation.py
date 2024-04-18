@@ -1,4 +1,7 @@
- data = pd.read_csv("cbb.csv")
+    import matplotlib.pyplot as plt
+    import pandas as pd
+    
+    data = pd.read_csv("cbb.csv")
     average_winning_ratio = data.groupby('TEAM')['W'].mean()
     top_5_teams = average_winning_ratio.nlargest(5)
     plt.figure(figsize=(10, 6))
