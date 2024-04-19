@@ -18,12 +18,55 @@ The project serves multiple purposes:
 * Ensure Python is installed on your system.
 * Install the required libraries (matplotlib and pandas) using pip install matplotlib pandas.
 * Import the libraries
-```sh
-import matplotlib.pyplot as plt
-import pandas as pd
-```
+    ```sh
+    import matplotlib.pyplot as plt
+    import pandas as pd
+    ```
 * Download the cbb.csv dataset and place it in the same directory as the script.
 * Run the 'main.py', and follow the on-screen instructions to select and view different visualizations.
+
+## Project Structure
+The project repository is organized as follows:
+.
+2024-4216COMP-Group6/
+│
+├── main.py
+│
+├── README.md
+│
+├── data/
+│ └── cbb.csv
+│
+├── visualizations/
+│ ├── aymane/
+│ │ ├── aymane_visualization.py
+│ │ └── README.md
+│ │
+│ ├── abdullah/
+│ │ ├── abdullah_visualization.py
+│ │ └── README.md
+│ │
+│ ├── hazim/
+│ │ ├── hazim_visualization.py
+│ │ └── README.md
+│ │
+│ ├── mavia/
+│ │ ├── mavia_visualization.py
+│ │ └── README.md
+│ │
+│ ├── jordy/
+│ │ ├── jordy_visualization.py
+│ │ └── README.md
+│ │
+│ ├── raghad/
+│ │ ├── raghad_visualization.py
+│ │ └── README.md
+│ │
+│ └── wissem/
+│ ├── wissem_visualization.py
+│ └── README.md
+│
+└── .gitignore
 
 ## Contributors
 * Abdullah Naveed
