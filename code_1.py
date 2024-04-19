@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 data = pd.read_csv("cbb.csv")
+
 champion_teams = data[data['POSTSEASON'] == 'Champions']
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
 ax1.bar(champion_teams['TEAM'], champion_teams['2P_O'], color='orange', alpha=0.5)
