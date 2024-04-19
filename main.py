@@ -1,6 +1,12 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
+#Abdullah Naveed's visualization
+
+
+#Raghad Elhoumsani's visualization 
+
+#Hazim Ifthikhar's visualization 
 def hazim_visualisation():
     data = pd.read_csv("cbb.csv")
     averageOffensive = data.groupby(['YEAR', 'TEAM'])['ADJOE'].mean().unstack()
@@ -14,7 +20,8 @@ def hazim_visualisation():
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.show()
-#author wissem
+
+#Wissem's visualization 
 def wissem_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_teams = data[data['POSTSEASON'] == 'Champions']
@@ -30,6 +37,7 @@ def wissem_visualisation():
     ax.legend()
     plt.show()
 
+#Mavia Sikander's visualization 
 def mavia_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_teams = data[data['POSTSEASON'] == 'Champions']
@@ -44,7 +52,8 @@ def mavia_visualisation():
     ax2.set_ylabel('Two-Pointers Allowed')
     plt.tight_layout()
     plt.show()
-
+    
+#Jordy Audon's visualization 
 def jordy_visualisation():
     data = pd.read_csv("cbb.csv")
     average_winning_ratio = data.groupby('TEAM')['W'].mean()
@@ -55,6 +64,7 @@ def jordy_visualisation():
     plt.axis('equal')
     plt.show()
 
+#Aymane Dani's visualization 
 def aymane_visualisation():
     data = pd.read_csv("cbb.csv")
     champion_team_data = data[data['TEAM'] == "North Carolina"]
@@ -82,7 +92,7 @@ def main():
         print("Press 6 for Abdullah's Visualisation")
         print("Press 7 for Raghad's Visualisation")
         print("Press 8 for Exit")
-        choice = input("Enter your choice (1-6): ")
+        choice = input("Enter your choice (1-7): ")
 
         if choice == '1':
             aymane_visualisation()
@@ -99,4 +109,6 @@ def main():
             break
         else:
             print("Please enter number from [1-8]")
+    
+# Executing the main function         
 main()
