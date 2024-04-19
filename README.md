@@ -12,11 +12,16 @@ The project serves multiple purposes:
 
 ## Prerequisites and Installation
 * Clone the repository to your local machine.
+```sh
+git clone https://github.com/Hazim2024/2024-4216COMP-Group6.git
+```
 * Ensure Python is installed on your system.
 * Install the required libraries (matplotlib and pandas) using pip install matplotlib pandas.
 * Import the libraries
-* import matplotlib.pyplot as plt
-* import pandas as pd
+```sh
+import matplotlib.pyplot as plt
+import pandas as pd
+```
 * Download the cbb.csv dataset and place it in the same directory as the script.
 * Run the 'main.py', and follow the on-screen instructions to select and view different visualizations.
 
