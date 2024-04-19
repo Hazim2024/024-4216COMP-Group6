@@ -28,47 +28,15 @@ The project serves multiple purposes:
 ## Project Structure
 The project repository is organized as follows:
 
-    ```
-    2024-4216COMP-Group6/
-    │
-    ├── main.py
-    │
-    ├── README.md
-    │
-    ├── data/
-    │ └── cbb.csv
-    │
-    ├── visualizations/
-    │ ├── aymane/
-    │ │ ├── aymane_visualization.py
-    │ │ └── README.md
-    │ │
-    │ ├── abdullah/
-    │ │ ├── abdullah_visualization.py
-    │ │ └── README.md
-    │ │
-    │ ├── hazim/
-    │ │ ├── hazim_visualization.py
-    │ │ └── README.md
-    │ │
-    │ ├── mavia/
-    │ │ ├── mavia_visualization.py
-    │ │ └── README.md
-    │ │
-    │ ├── jordy/
-    │ │ ├── jordy_visualization.py
-    │ │ └── README.md
-    │ │
-    │ ├── raghad/
-    │ │ ├── raghad_visualization.py
-    │ │ └── README.md
-    │ │
-    │ └── wissem/
-    │ ├── wissem_visualization.py
-    │ └── README.md
-    │
-    └── .gitignore
-    ```
+- **main.py**: Contains the main script where users can access all visualizations through a menu-driven interface.
+
+- **README.md**: The main README file providing an overview of the project and instructions on how to run the code.
+
+- **data/**: Directory containing the dataset "cbb.csv".
+
+- **visualizations/**: Directory containing individual branches for each team member's visualization. Each branch includes a Python script for the visualization and a README.md file providing details about the visualization's purpose and how to run it.
+
+This structure helps users understand where to find specific components of the project and facilitates navigation within the repository. Each visualization is organized into its own directory, making it easy to locate and explore individual contributions.
 
 ## Contributors
 * Abdullah Naveed
